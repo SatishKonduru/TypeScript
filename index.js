@@ -37,7 +37,7 @@ var list = [10, 20];
 var person = {
     firstName: 'Satish',
     lastName: 'Konduru',
-    age: 43
+    
 };
 function fullName(myInterface) {
     console.log(myInterface.firstName);

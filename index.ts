@@ -43,7 +43,7 @@ let list = [10,20]
 let person = {
     firstName: 'Satish',
     lastName: 'Konduru',
-    age: 43
+   
 }
 interface myInterface{
     firsName: string
