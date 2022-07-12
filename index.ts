@@ -28,8 +28,8 @@ function add(x: number, y: number = 100){
    }
     
 }
-let mysum = add(10) // actual parameter
-console.log(mysum)
+// let mysum = add(10) // actual parameter
+// console.log(mysum)
 // function sub(a, b){
 //   return  a-b
 // }
@@ -38,18 +38,48 @@ console.log(mysum)
 // let num = 100 + substation
 
 
-let x = 10
-let list = [10,20]
-let person = {
-    firstName: 'Satish',
-    lastName: 'Konduru',
+// let x = 10
+// let list = [10,20]
+// let person = {
+//     firstName: 'Satish',
+//     lastName: 'Konduru',
    
-}
-interface myInterface{
-    firsName: string
-}
-function fullName(myInterface){
-    console.log(myInterface.firstName)
+// }
+// interface myInterface{
+//     firsName: string
+// }
+// function fullName(myInterface){
+//     console.log(myInterface.firstName)
+// }
+
+// fullName(person)
+
+class Employee{
+  empName 
+    constructor(name){
+        this.empName = name
+    }
+    welcome(){
+        console.log(`hi, Welcome Mr. ${this.empName} `)
+    }
 }
 
-fullName(person)
+let emp1 = new Employee('Satish')  //Instantiation
+let emp2 = new Employee('Peter')
+console.log("For emp1 Object : "+emp1.empName)
+console.log("For emp2 Object : "+emp2.empName)
+// emp2.welcome()
+
+class Manager extends Employee{
+    
+    constructor(mName){
+     super(mName)
+    }
+   
+}
+let mng1 = new Manager('Prasad')
+console.log(mng1.empName)
+
+// public :  Anywhere can access
+// private: Only inside of the class where you declared
+//protected: Only inside of the class and only inside of the deviced classes NOT Outside
